@@ -1,0 +1,252 @@
+​
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Bo Tao'Resume</title>
+	<style >
+		
+		BOTAO HUANG{
+			box-sizing: border-box;/* 将所有的box-sizing换成border-box */
+		}
+		body {
+			background: #eee;
+			margin: 30px 0;
+		}
+		article {
+			width: 21cm;
+			min-height: 29.7cm;/* A4纸的大小 */
+			background: white;
+			margin: 0 auto;/* 左右居中 */
+			overflow: auto;/* 如果内容被修剪，则浏览器会显示滚动条，以便查看其余内容 */
+			padding: 1em;/* 内边距 */
+		}
+	</style>
+	<style>
+		body{}
+		article{padding-top: 20px;}
+		p{margin: .3em 0;}/* p的行间距 */
+		h1{font-size: 35px;
+		margin-top: 0;}
+		ol,ul{list-style: none;}/* 不要ol和ul之前的数字，因为它会影响到后面的宽度*/
+		h3,h4,h5,h6{margin: 0;}
+		h4,h5,h6{font-weight: normal;}/* 取消这几个标题的加粗 */
+		.bio{position: relative;}
+			.bio img{
+				position: absolute;/* 让图片顶上去和文字保持水平 */
+				top:0;
+				right: 0;
+			}
+		ul{
+			margin: 0;
+			padding: 0;/* 使ul标签和li标签文字能够对齐 */
+		}
+	</style>
+	<style>
+		.work{}
+		.work>h2{}/* >选择器 */
+		.work>ol{
+			list-style-position: inside;
+			margin-top: 0;
+			padding: 0;}
+		.work>ol>li{margin: 12px 0;}
+		.work header{
+			display: flex;
+			color: #666;
+			margin-bottom: 12px;
+		}
+		.work header>h3{
+			font-size: 18px;
+			color: #333;
+		}
+		.work header>h4{
+			margin-left: 1em;
+			font-size: 18px;
+		}
+		.work header>span{
+			font-size: 18px;
+			margin-left: auto;
+		}
+		.work li{color: #666;}
+		.work strong{color: #F60;}/* strong标签里的字的颜色 */
+		
+	</style>
+	<style>
+		.projects{}
+		.projects p{color: #666;}/* p段字体的颜色 */
+		.projects strong{color: #f60;}
+		.projects > ol{
+			list-style-position: inside;
+			margin-top: 0;/* 使li标签和ol标签的文字能够对齐 */
+			padding: 0;
+		}
+		.projects >ol >li{
+			margin-bottom: 24px;/* ol标签和li标签之前的间距 */
+		}
+		.projects > ol > li > header{
+			display: flex;/* 把链接和文案分开 */
+			justify-content: space-between;
+		}
+		.projects > ol > li h3{
+			display: inline-block;
+			color: #333;
+		}
+		
+	</style>
+	<style>
+		.major{
+			
+		}
+		.major > ol{
+			list-style-position: inside;
+			margin-top: 0;
+			padding: 0;
+		}
+		.major > ol > li > header{
+			display: flex;
+			justify-content: space-between;
+		}
+		.major > ol > li h2{
+			display: inline-block;
+		}
+		.major h4{
+			font-weight: normal;
+			color: #666;
+			}
+		.major strong{color: #f60;}
+		.tupian img{
+			
+			position: relative;
+			bottom: 5px;
+			left: 500px;
+		}
+		.major >.wrapper{
+			display: flex;
+			justify-content: space-between;/* 使两个盒子并列分布 */
+		}
+		.major >.wrapper:first-child{
+			margin-right: 24px;/* 两个盒子之间的间距，first-child是第一个元素，因为我们不确定哪个盒子是第一个 */
+		}
+		.major >.wrapper>#tupian{
+			margin-bottom: 18px;
+		}
+		.major >.wrapper>ul>li{
+			line-height: 1.5;
+			margin-bottom: 8px;
+			
+		}
+	</style>
+	<style>
+		.huojiang{
+			
+		}/* 基本和上面都是一样的 */
+		.huojiang > ol{
+			list-style-position: inside;
+			margin-top: 0;
+			padding: 0;
+		}
+		.huojiang > ol > li > header{
+			display: flex;
+			justify-content: space-between;
+		}
+		.huojiang > ol > li h2{
+			display: inline-block;
+		}
+		.huojiang h4{
+			font-weight: normal;
+			color: #666;
+			}
+		.huojiang strong{color: #f60;}
+	</style>
+</head>
+<body>
+	<article>
+		<section class="bio">
+			<h1>BOTAO HUANG</h1>
+			<img src="IMG_7502.JPG" alt="" width="150" height="200"/>
+			<p>Male | 22 | Adress：G12 8EW Great Western Road Glasgow</p>
+			<p>Phone：07729532686 | Mail：2721591H@student.gla.ac.uk</p>
+		</section>
+		<section>
+			<h2>Education</h2>
+		<p></p>
+			<p>
+				
+				Xinjiang University of Finance and Economics, Urumqi, Xinjiang
+</p>
+<p>Bachelor | Date of Graduation 06/07/2021</p>
+<p>Major in information security
+			</p> 
+		</section>
+		<hr /><!-- 画个横线 -->
+		
+		<section class="work"><!-- 给他设个名字，方便css中调用 -->
+			<h2>Skills</h2>
+			
+					<header>
+						<p>• Language Skills: English and Chinese</p><br>
+						<p> • Computer Skills: MySQL，Linux</p><br>
+<p> • Technical Skills: C language</p>
+				
+					</header>
+					
+			
+	
+		</section>
+		<hr />
+		
+		<section class="projects">
+			<h2>Experience</h2>
+			<ol>
+				<li>
+					<header>
+						<h3>06/07/2020 - 06/09/2020 Assistant Engineer </h3>
+						<a href="#">Yunsheng Technology Co., Ltd.</a>
+					</header>
+					<p>
+						Responsible for the construction and planning of the team's front-end public infrastructure, Soda is used to quickly build front-end projects, which are divided into three parts: UI, Store, and Project. 
+					</p>
+				</li>
+				
+			</ol>
+		</section>
+		<hr />
+		<section class="huojiang">
+			<h2>Best Characteristics</h2>
+			<ol>
+				<li>
+					<header>
+						<h4>I understand software development essentials such as data structures, algorithms, and computer networking. I am interested in computer and operating system fundamentals. I can do computer related work for my employer.</h4>
+					</header>
+				</li>
+				
+				
+			</ol>
+		</section>
+		
+		<section class="major">
+		<hr />
+			
+			<h2>Awards & Acknowledgements</h2>
+			
+			<div class="wrapper">
+				
+				<ul>
+					<li>
+						<header>
+							<h3>Outstanding Intern in the Department</h3>
+<h4>I would like to thank my department head, JIA, who gave me a lot of advice during my internship. I would also like to thank my colleagues for helping me a lot in work and life.</h4>
+						</header>
+					</li>
+					
+				</ul>
+				
+			
+		</section>
+	</article>
+</body>
+</html>
+ 
+​
